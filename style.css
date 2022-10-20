@@ -1,0 +1,236 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+:root{
+    --fs-regular:1rem; 
+    --fs-medium:1.5rem;
+    --fs-bold:2rem;
+
+  /*COLOR THEME 1*/
+  --t1-color-darkest:#171F32;
+  --t1-color-dark:#3B4765;
+  --t1-color-medium:#647399;
+  --t1-color-light:#EBE3DB;
+  --t1-color-egual:#D04031;
+
+  /*COLOR THEME 2*/
+  --t2-color-darkest:#171F32;
+  --t2-color-dark:#3B4765;
+  --t2-color-medium:#
+  --t2-color-light:#EBE3DB;
+  --t2-color-egual:#D04031;
+  /*COLOR THEME 3*/
+  --t2-color-darkest:#171F32;
+  --t2-color-dark:#3B4765;
+  --t2-color-medium:#
+  --t2-color-light:#EBE3DB;
+  --t2-color-egual:#D04031;
+
+
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+/*Typo*/
+
+.logo{
+  font-size: var(--fs-bold);
+}
+
+.result{
+  font-size: 4rem;
+}
+
+button{
+  padding: 0;
+  font-size:2.5rem;
+  background-color: #EBE3DB;
+  border-color: #3B4765;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px grey;
+}
+
+/*MOBILE*/
+
+.calculator{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--t1-color-dark);
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav,
+.theme-values,
+.theme-component-wrapper,
+.theme-selector{
+  display: flex;
+}
+
+nav{
+  justify-content: space-between;
+  margin-top: 1em;
+  color: #fff;
+}
+
+.theme-component-wrapper{
+  align-items: center;
+}
+
+.theme-selector{
+  flex-direction: column;
+  max-width: 80px;
+}
+
+.theme-values{
+  justify-content: space-around;
+}
+
+.theme-label{
+  margin-right: 1em;
+  align-self: flex-end;
+}
+
+#theme::-webkit-slider-runnable-track{
+  background-color:var(--t1-color-darkest);
+  padding: .5em;
+  border-radius: 20px;
+}
+
+
+
+.result{
+  background-color: #fff;
+  text-align: right;
+  margin: .3em 0;
+  padding-right: .2em;
+  border-radius: 8px;
+}
+
+main{
+  background-color: var(--t1-color-darkest);
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.digits{
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-areas:
+  "seven eight nine del"
+  "four five six addition"
+  "one two three subtract"
+  "dot zero division multiply"
+  "res res egual egual ";
+}
+
+/*Numbers*/
+.one{grid-area: one;}
+.two{grid-area: two;}
+.three{grid-area: three;}
+.four{grid-area: four;}
+.five{grid-area: five;}
+.six{grid-area:six;}
+.seven{grid-area: seven;}
+.eight{grid-area: eight;}
+.nine{grid-area: nine;}
+.zero{grid-area: zero;}
+
+/*Operators*/
+.dot{grid-area: dot;}
+.division{grid-area:division;}
+.multiply{grid-area: multiply;}
+.subtract{grid-area: subtract;}
+.addition{grid-area: addition;}
+.delete{grid-area: del;}
+.reset{grid-area: res;}
+.egual{grid-area: egual;}
+
+
+.reset,
+.delete{
+  font-size: 1.5rem;
+}
