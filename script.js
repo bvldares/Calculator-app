@@ -1,20 +1,10 @@
 const scrollBar = document.getElementById("theme")
 const digits = document.querySelectorAll(".digit")
-let numArray = []
-scrollBar.addEventListener("change", ()=> {
-    console.log(scrollBar.value)
-})
+const operatori = document.querySelectorAll(".operator")
+const resultOutput = document.querySelector(".result")
+let numero = ""
 
-
-digits.forEach(digit =>{
-    digit.addEventListener("click", ()=>{
-        numArray.push(parseInt(digit.value))
-        console.log(numArray)
-    })
-})
-
-
-
+let operator = null 
 
 
 function sum (arr){
@@ -40,6 +30,53 @@ function subtraction(arr){
     arr.map(num=> result -= num)
     return result
 }
+
+
+digits.forEach(num =>{
+    num.addEventListener("click", () =>{
+        numero += num.value
+        resultOutput.innerHTML = numero
+    })
+})
+
+
+operatori.forEach(operatore =>{
+    operatore.addEventListener("click", ()=>{
+        operator = operatore.value
+        numero = ""
+
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Funzione per il cambio tema
+scrollBar.addEventListener("change", ()=> {
+    console.log(scrollBar.value)
+})
 
 
 
