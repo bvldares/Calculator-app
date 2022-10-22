@@ -64,10 +64,12 @@ function themeSwapper(nav, calc, main, digit, btn, egual, outinp, scrollinfo){
         button.classList.add(`${btn}`)
     })
 
+
     egualEl.className = ""
     egualEl.classList.add(`egual`)
     egualEl.classList.add(`${egual}`)
 
+    
     inputEl.id = outinp
     scrollBar.id = scrollinfo
     
@@ -76,7 +78,6 @@ function themeSwapper(nav, calc, main, digit, btn, egual, outinp, scrollinfo){
 
 scrollBar.addEventListener("change", ()=> {
     if(scrollBar.value === "1"){
-        
         document.body.style.background = "#647299"
         themeSwapper("nav-one", "calculator-one", "main-one","digits-one", "btn-one", "egual-one", "inpout-one","theme-one")
     }else if(scrollBar.value ==="2"){

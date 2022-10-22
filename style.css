@@ -280,7 +280,10 @@ main{
 .nav-one{color:#fff;}
 .calculator-one{background-color:#647299;}
 .main-one{background-color: #171F32;}
-.digits-one{background-color:#D3CDCD;}
+.digits-one{
+  background-color:#D3CDCD;
+  color: #34362b;
+}
 
 .digits-one:hover,
 .digits-one:focus{
@@ -335,7 +338,10 @@ main{
 .nav-two{color:#34362b;}
 .calculator-two{background-color:#E6E6E6;}
 .main-two{background-color:#D3CDCD;}
-.digits-two{background-color:#E5E4E0;}
+.digits-two{
+  background-color:#E5E4E0;
+  color: #34362b;
+}
 
 
 .digits-two:hover,
