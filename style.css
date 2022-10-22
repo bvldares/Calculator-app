@@ -176,10 +176,28 @@ nav{
   align-self: flex-end;
 }
 
-#theme::-webkit-slider-runnable-track{
-  background-color:var(--t1-color-darkest);
-  padding: .5em;
+#theme{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #171F32; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  padding: 0 .3em;
   border-radius: 20px;
+}
+
+#theme::-webkit-slider-thumb{
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 17px; /* Set a specific slider handle width */
+  height: 17px; /* Slider handle height */
+  background: #D13F30; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
 }
 
 
@@ -214,6 +232,7 @@ main{
   "one two three subtract"
   "dot zero division multiply"
   "res res egual egual ";
+
 }
 
 /*Numbers*/
@@ -249,12 +268,51 @@ main{
   font-size: 1.5rem;
 }
 
+.digit,
+#reset,
+#delete,
+#egual{
+  cursor: pointer;
+}
+
 
 /*THEME 1 CLASSES*/
 .nav-one{color:#fff;}
 .calculator-one{background-color:#647299;}
 .main-one{background-color: #171F32;}
 .digits-one{background-color:#D3CDCD;}
+
+.digits-one:hover,
+.digits-one:focus{
+  background-color: #fff;
+}
+
+
+#theme-one{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #171F32; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  padding: 0 .3em;
+  border-radius: 20px;
+}
+
+#theme-one::-webkit-slider-thumb{
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 17px; /* Set a specific slider handle width */
+  height: 17px; /* Slider handle height */
+  background: #D13F30; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+
 
 .btn-one{
     background-color:#647299;
@@ -279,16 +337,22 @@ main{
 .main-two{background-color:#D3CDCD;}
 .digits-two{background-color:#E5E4E0;}
 
+
+.digits-two:hover,
+.digits-two:focus{
+  background-color: #fff;
+}
+
 .btn-two{
-    background-color:#3A8187;
+    background-color:#62B5BD;
     color: #fff;
-    box-shadow: 0px 4px #3A8187;
+    box-shadow: 0px 4px #007781;
 }
 
 .egual-two{
-  background-color: #D04031;
+  background-color:#FF8B38;
   color: #fff;
-  box-shadow: 0px 4px #D04031;
+  box-shadow: 0px 4px #a54500;
 }
 
 #inpout-two{
@@ -296,15 +360,47 @@ main{
   color: #34362b;
 }
 
+#theme-two{
+  transition: 1s;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #D3CDCD; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  padding: 0 .3em;
+  border-radius: 20px;
+}
+
+#theme-two::-webkit-slider-thumb{
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 17px; /* Set a specific slider handle width */
+  height: 17px; /* Slider handle height */
+  background: #FF8B38; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+
 
 /*THEME 3 CLASSES*/
 .nav-tre{color:#FFF45C;}
-.calculator-tre{background-color:#1E0836;}
-.main-tre{background-color:#331259;}
+.calculator-tre{background-color:#17062A;}
+.main-tre{background-color:#1E0836;}
 .digits-tre{
   background-color:#361D54;
   box-shadow:0 4px #BA18F5;
   color: #FFF45C;
+}
+
+
+.digits-tre:hover,
+.digits-tre:focus{
+  background-color:#6B34AC;
 }
 
 .btn-tre{
@@ -320,13 +416,35 @@ main{
 }
 
 #inpout-tre{
-  background: #56077C;
+  background: #1E0836;
   color: #FFF45C;
 }
 
-input[type="range"]{
-  background-color: red;
+#theme-tre{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #1E0836; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  padding: 0 .3em;
+  border-radius: 20px;
 }
+
+#theme-tre::-webkit-slider-thumb{
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 17px; /* Set a specific slider handle width */
+  height: 17px; /* Slider handle height */
+  background: #00DECF; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+
 
 
 @media(min-width:650px){

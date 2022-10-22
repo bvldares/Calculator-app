@@ -41,7 +41,7 @@ const btnEl = document.querySelectorAll(".same")
 const egualEl = document.querySelector("#egual")
 const inputEl = document.getElementById("outinp")
 
-function themeSwapper(nav, calc, main, digit, btn, egual, outinp, background){
+function themeSwapper(nav, calc, main, digit, btn, egual, outinp, scrollinfo){
     navEl.className = ""
     navEl.classList.add(`${nav}`)
 
@@ -69,20 +69,22 @@ function themeSwapper(nav, calc, main, digit, btn, egual, outinp, background){
     egualEl.classList.add(`${egual}`)
 
     inputEl.id = outinp
+    scrollBar.id = scrollinfo
     
 }
 
 
 scrollBar.addEventListener("change", ()=> {
     if(scrollBar.value === "1"){
+        
         document.body.style.background = "#647299"
-        themeSwapper("nav-one", "calculator-one", "main-one","digits-one", "btn-one", "egual-one", "inpout-one","#3B4765")
+        themeSwapper("nav-one", "calculator-one", "main-one","digits-one", "btn-one", "egual-one", "inpout-one","theme-one")
     }else if(scrollBar.value ==="2"){
         document.body.style.background = "#e6e6e6"
-        themeSwapper("nav-two", "calculator-two", "main-two", "digits-two", "btn-two", "egual-two", "inpout-two")
+        themeSwapper("nav-two", "calculator-two", "main-two", "digits-two", "btn-two", "egual-two", "inpout-two", "theme-two")
     }else if(scrollBar.value ==="3"){
-        document.body.style.background = "#1E0836"
-        themeSwapper("nav-tre", "calculator-tre", "main-tre", "digits-tre", "btn-tre", "egual-tre", "inpout-tre")
+        document.body.style.background = "#17062A"
+        themeSwapper("nav-tre", "calculator-tre", "main-tre", "digits-tre", "btn-tre", "egual-tre", "inpout-tre", "theme-tre")
     }
 })
 
