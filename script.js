@@ -14,21 +14,9 @@ digits.forEach(btn =>{
 })
 
 
-egualBtn.addEventListener("click", function(){
-    resultOutput.value = eval(resultOutput.value)
-  
-})
-
-
-resetBtn.addEventListener("click",()=>{
-    resultOutput.value =""
-})
-
-
-delBtn.addEventListener("click", function(){
-    console.log("clicked")
-    resultOutput.value = resultOutput.value.slice(0,-1)
-})
+egualBtn.addEventListener("click", ()=> resultOutput.value = eval(resultOutput.value))
+resetBtn.addEventListener("click",()=> resultOutput.value ="" )
+delBtn.addEventListener("click", ()=> resultOutput.value = resultOutput.value.slice(0,-1))
 
 
 

@@ -203,6 +203,7 @@ nav{
 
 
 input[type="text"]{
+  background-color: #171F32;
   font-size: 3em;
   max-width: 100%;
   width: 100%;
@@ -323,10 +324,21 @@ main{
     box-shadow: 0px 4px #647299;
 }
 
+.btn-one:hover,
+.btn-one:focus{
+  background-color: #294075;
+}
+
 .egual-one{
   background-color: #D13F30;
   color: #fff;
   box-shadow: 0px 4px #D04031;
+}
+
+
+.egual-one:hover,
+.egual-one:focus{
+  background-color: #ff1900;
 }
 
 #inpout-one{
@@ -355,10 +367,22 @@ main{
     box-shadow: 0px 4px #007781;
 }
 
+
+.btn-two:hover,
+.btn-two:focus{
+  background-color: #019caa;
+}
+
 .egual-two{
   background-color:#FF8B38;
   color: #fff;
   box-shadow: 0px 4px #a54500;
+}
+
+
+.egual-two:hover,
+.egual-two:focus{
+  background-color: #ff6a00;
 }
 
 #inpout-two{
@@ -415,10 +439,21 @@ main{
     box-shadow: 0px 4px #BA18F5;
 }
 
+.btn-tre:hover,
+.btn-tre:focus{
+  background-color: #8727aa;
+}
+
+
 .egual-tre{
   background-color: #00DECF;
   color: #361D54;
   box-shadow: 0px 4px #00DECF;
+}
+
+.egual-tre:hover,
+.egual-tre:focus{
+  background-color: #00ffee;
 }
 
 #inpout-tre{
@@ -451,6 +486,17 @@ main{
 }
 
 
+@media(max-height:845px){
+   
+  #outinp{
+    margin: .2em 0;
+  }
+
+  .digits{
+    gap: 1em;
+  }
+}
+
 
 
 @media(min-width:650px){
@@ -464,6 +510,5 @@ main{
     position: static;
     margin: auto;
   }
-  
   
 }
