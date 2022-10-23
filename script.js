@@ -66,7 +66,7 @@ function themeSwapper(nav, calc, main, digit, btn, egual, outinp, scrollinfo){
 
 scrollBar.addEventListener("change", ()=> {
     if(scrollBar.value === "1"){
-        document.body.style.background = "#647299"
+        document.body.style.background = "#3B4765"
         themeSwapper("nav-one", "calculator-one", "main-one","digits-one", "btn-one", "egual-one", "inpout-one","theme-one")
     }else if(scrollBar.value ==="2"){
         document.body.style.background = "#e6e6e6"

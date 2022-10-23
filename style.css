@@ -216,6 +216,11 @@ input[type="text"]{
   border: none;
 }
 
+#outinp{
+  background-color: #171F32;
+  color: #fff;
+}
+
 
 main{
   background-color: var(--t1-color-darkest);
@@ -279,7 +284,7 @@ main{
 
 /*THEME 1 CLASSES*/
 .nav-one{color:#fff;}
-.calculator-one{background-color:#647299;}
+.calculator-one{background-color:#3B4765;}
 .main-one{background-color: #171F32;}
 .digits-one{
   background-color:#D3CDCD;
